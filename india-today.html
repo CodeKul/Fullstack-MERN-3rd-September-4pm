@@ -1,39 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        header{
-            text-align: center;
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
 
-        /* span, div{
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- 
+    
+        background-color 
+    color 
+    float 
+    height 
+    width 
+    text-align 
+    background-image
+    padding 
+    margin 
+    position  
+    hover
+-->
+
+    <style>
+      header {
+        text-align: center;
+      }
+
+      /* span, div{
 height: 500px;
 width: 500px;
 background-color: aqua;
         } */
 
-        #headertext{
-            /* background-color:chartreuse; */
-            color: red;
-            display: inline-block;
-            /* height: 50px; */
-            width: 70px;
-        }
+      #headertext {
+        /* background-color:chartreuse; */
+        color: red;
+        display: inline-block;
+        /* height: 50px; */
+        width: 70px;
+      }
+
+      nav {
+        background-color: red;
+        color: aliceblue;
+      }
+
+      ul {
+        padding: 8px;
+        font-size: larger;
+      }
+
+      li {
+        display: inline;
+      }
+
+      li:hover {
+        color: blue;
+      }
+
+      button {
+        background-color: midnightblue;
+        color: aliceblue;
+      }
+      i {
+        color: aliceblue;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- diff between inline, block , inline-block element -->
     <header>
-
-        <span>NEWS</span>
-        <span>LIVE TV</span>
-        <span id="headertext">INDIA TODAY</span>
-        <span>APP</span>
-        <span>MAGAZINE</span>
+      <span>NEWS</span>
+      <span>LIVE TV</span>
+      <span id="headertext">INDIA TODAY</span>
+      <span>APP</span>
+      <span>MAGAZINE</span>
     </header>
-</body>
+
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>My Feed</li>
+        <li>India</li>
+        <li>World</li>
+        <li>Business</li>
+        <li>Tech</li>
+        <li>Movies</li>
+        <li>Sports</li>
+        <li>Science</li>
+        <li>Best Universities</li>
+        <li>Health</li>
+        <li><i class="bi bi-arrow-right-circle-fill"></i></li>
+        <li>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-right-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+            />
+          </svg>
+        </li>
+
+        <li>
+          <i class="fas fa-user-friends"></i>
+        </li>
+      </ul>
+    </nav>
+
+    <button class="btn btn-warning">Search</button>
+  </body>
 </html>
