@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="creating a table in html">
+    <meta name="keywords" content="table">
+    <title>Document</title>
+
+    <style>
+        table, th, td{
+            border: solid 1px black;
+            border-collapse: collapse;
+        }
+
+        /* grouping selector 
+        css selectors */
+    </style>
+  </head>
+  <body>
+   <h1>Tables in html</h1>
+
+
+   <table>
+       <!-- <tr>
+           <th>Day</th>
+           <th>Schedule</th>
+           <th>Task</th>
+           <th>Status</th>
+       </tr>
+
+       <tr>
+           <td>Monday</td>
+           <td>8am - 10am</td>
+           <td>Complete HTML Basics</td>
+           <td>Pending</td>
+       </tr> -->
+
+
+
+       <tr>
+         <th rowspan="3">Day</th> 
+         <th colspan="3">Seminar</th> 
+       </tr>
+
+       <tr>
+           <th colspan="2">schedule</th>
+           <th rowspan="2">Topic</th>
+       </tr>
+
+       <tr>
+           <th>Begin</th>
+           <th>End</th>
+       </tr>
+
+       <tr>
+           <td>Monday</td>
+           <td>8.00 am</td>
+           <td>5.00 pm</td>
+           <td>Introduction to XML</td>
+       </tr>
+
+   </table>
+  </body>
+</html>
