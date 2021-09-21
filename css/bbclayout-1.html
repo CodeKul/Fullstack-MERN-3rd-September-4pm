@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            width: 1000px;
+            flex-direction: row;
+        }
+
+        .column-2{
+            display: flex;
+            flex-wrap: wrap;
+           
+            padding: 6px;
+        }
+
+      .column-2 img{
+            height: 200px;
+            width: 200px;
+        }
+
+        
+        .column-1 img{
+            height: 400px;
+            width: 400px;
+            padding: 6px;
+            margin: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column-1">
+            <img src="../resources/4.jpg" alt="">
+
+        </div>
+        <div class="column-2">
+            <div class="inner-flex-items">
+                <img src="../resources/4.jpg" alt="">
+            </div>
+            <div class="inner-flex-items">
+                <img src="../resources/4.jpg" alt="">
+            </div>
+            <div class="inner-flex-items">
+                <img src="../resources/4.jpg" alt="">
+            </div>
+            <div class="inner-flex-items">
+                <img src="../resources/4.jpg" alt="">
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

@@ -5,33 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <style>
-        .container{
-            border: solid 2px black;
+        .flex-container{
             display: flex;
+            border:solid 2px red;
             flex-direction: row;
-
+            flex-wrap: wrap;
+           
         }
+
         .flex-items{
             height: 200px;
             width: 200px;
-            border: solid 2px red;
+
+            border: solid 2px black;
         }
     </style>
 </head>
 <body>
     
-
-
-    <div class="container">
-
+    <div class="flex-container">
         <div class="flex-items">One</div>
         <div class="flex-items">Two</div>
         <div class="flex-items">Three</div>
         <div class="flex-items">Four</div>
         <div class="flex-items">Five</div>
-
+        <div class="flex-items">Six</div>
     </div>
 </body>
 </html>
