@@ -6,29 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-
     <!-- https://www.oreilly.com/library/view/flexbox-in-css/9781491981474/ch04.html
     
     https://www.cssmine.com/ebook/flexbox-examples 
 -->
     <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+      }
       .column-2 h3 {
         background-color: red;
         color: white;
       }
 
-      span:first-child{
-          border-radius: 50%;
-          background-color: red;
-          color: white;
-          padding: 7px;
+      span:first-child {
+        border-radius: 50%;
+        background-color: red;
+        color: white;
+        padding: 7px;
+      }
 
+      .row-1 img {
+        height: 400px;
+        width: 550px;
+      }
+
+      .card img {
+        height: 150px;
+        width: 150px;
+      }
+
+      .row-2 {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .card {
+        height: 180px;
+        width: 180px;
+        margin: 10px;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="coulmn-1"></div>
+      <div class="coulmn-1">
+        <div class="row row-1">
+          <img src="../resources/4.jpg" alt="" />
+        </div>
+        <div class="row row-2">
+          <div class="card">
+            <img src="../resources/3.jpg" alt="" />
+            <h2>Card-Title</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+              natus fugiat, architecto itaque quos molestias voluptatibus error
+              at neque? Vero culpa corporis neque quos fuga labore repellendus
+              accusamus quasi optio!
+            </p>
+          </div>
+          <div class="card">
+            <img src="../resources/3.jpg" alt="" />
+            <h2>Card-Title</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+              natus fugiat, architecto itaque quos molestias voluptatibus error
+              at neque? Vero culpa corporis neque quos fuga labore repellendus
+              accusamus quasi optio!
+            </p>
+          </div>
+          <div class="card">
+            <img src="../resources/3.jpg" alt="" />
+            <h2>Card-Title</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+              natus fugiat, architecto itaque quos molestias voluptatibus error
+              at neque? Vero culpa corporis neque quos fuga labore repellendus
+              accusamus quasi optio!
+            </p>
+          </div>
+        </div>
+      </div>
 
       <div class="column-2">
         <h3>Latest Business News</h3>
@@ -37,8 +96,7 @@
           <span>1</span>
           <span
             >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
-           </span
-          >
+          </span>
         </div>
         <div></div>
         <div></div>
