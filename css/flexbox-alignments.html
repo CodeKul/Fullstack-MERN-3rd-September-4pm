@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- find what is the difference between justify-content, justify-items, justify-self 
+    and align-content, align-items, align-self  
+
+
+    why there is a larger space between two rows when we use flex-wrap
+-->
+    <style>
+      .container {
+        border: solid 2px black;
+        display: flex;
+        flex-direction: row;
+        height: 600px;
+        width: 400px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+       
+      }
+
+      .flex-items {
+        border: solid 2px red;
+        height: 100px;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex-items">One</div>
+      <div class="flex-items">Two</div>
+      <div class="flex-items">Three</div>
+      <div class="flex-items">Four</div>
+      <div class="flex-items">Five</div>
+    </div>
+  </body>
+</html>
