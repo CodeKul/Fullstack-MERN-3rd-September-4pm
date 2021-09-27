@@ -11,8 +11,18 @@
     <style>
         .container{
             display: grid;
-            grid-template-columns: 400px 200px 50px;
-            grid-template-rows: 100px 50px;
+            /* grid-template-columns: 25% 200px 1fr 2fr; */
+            grid-template-columns: repeat(4, 100px);
+            grid-template-rows: 100px 50px 200px;
+            gap: 10px;
+        
+        }
+
+        .two{
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 3;
         }
 
         .grid-items{
@@ -22,11 +32,11 @@
 </head>
 <body>
     <div class="container">
-        <div class="grid-items">One</div>
-        <div class="grid-items">Two</div>
-        <div class="grid-items">Three</div>
-        <div class="grid-items">Four</div>
-        <div class="grid-items">Five</div>
+        <div class="grid-items one">One</div>
+        <div class="grid-items two">Two</div>
+        <div class="grid-items three">Three</div>
+        <div class="grid-items four">Four</div>
+        <div class="grid-items five">Five</div>
 
     </div>
 </body>
