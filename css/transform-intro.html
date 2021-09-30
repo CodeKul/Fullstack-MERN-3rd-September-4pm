@@ -20,19 +20,29 @@
             width: 200px;
         }
 
+        body{
+            transform-style: preserve-3d;
+            perspective: 200px;
+        }
+
 
         img:hover{
             transform: scale(2);
             transition-duration: 5s;
         }
         .container:hover{
+         
             
 
-            transform: translateY(400px);
+            transform: translate(400px);
             transform: rotateY(180deg);
             transform: scaleY(2);
+
+            transform: skewY(70deg);
+            transform: translate(400px, 300px);
+            transform: translateZ(-200px);
             transition-duration: 15s;
-            transition-delay: 3s;
+            transition-delay: 1s;
         }
 
         span{
