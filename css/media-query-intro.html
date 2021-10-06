@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* @media screen/speech/print/all and {
+
+        } */
+
+      @media screen and (min-width: 500px) and (max-width: 900px){
+        .container {
+          background-color: black;
+          color: aliceblue;
+        }
+      }
+
+      @media print {
+          p{
+              background-color: yellow;
+          }
+
+
+          h1{
+              display: none;
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Media Queries</h1>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In doloribus
+        iure nulla veritatis esse ipsum distinctio consectetur dolore
+        repellendus culpa inventore at mollitia eos, omnis, aut qui dolorem.
+        Architecto, perferendis?
+      </p>
+    </div>
+  </body>
+</html>
