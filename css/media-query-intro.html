@@ -11,22 +11,36 @@
 
         } */
 
-      @media screen and (min-width: 500px) and (max-width: 900px){
+      @media screen and (min-width: 500px) and (max-width: 900px) {
         .container {
           background-color: black;
           color: aliceblue;
+          display: flex;
+        }
+
+
+        .one{
+          background-color: blue;
+          color: aliceblue;
+        }
+
+        .three{
+          background-color: yellow;
         }
       }
 
-      @media print {
-          p{
-              background-color: yellow;
-          }
+      @media  print and (orientation: landscape) {
+        p {
+          background-color: yellow;
+        }
 
+        .container{
+          display: flex;
+        }
 
-          h1{
-              display: none;
-          }
+        h1 {
+          display: none;
+        }
       }
     </style>
   </head>
@@ -40,6 +54,43 @@
         repellendus culpa inventore at mollitia eos, omnis, aut qui dolorem.
         Architecto, perferendis?
       </p>
+
+      <section class="one">
+        <h2>Section</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+          dignissimos exercitationem odit consequuntur dicta atque? Omnis,
+          corporis ab? Est rerum vero quae tenetur dolore explicabo maxime
+          laudantium numquam labore. Accusantium.
+        </p>
+      </section>
+      <section class="two">
+        <h2>Section</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+          dignissimos exercitationem odit consequuntur dicta atque? Omnis,
+          corporis ab? Est rerum vero quae tenetur dolore explicabo maxime
+          laudantium numquam labore. Accusantium.
+        </p>
+      </section>
+      <section class="three">
+        <h2>Section</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+          dignissimos exercitationem odit consequuntur dicta atque? Omnis,
+          corporis ab? Est rerum vero quae tenetur dolore explicabo maxime
+          laudantium numquam labore. Accusantium.
+        </p>
+      </section>
+      <section class="four">
+        <h2>Section</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+          dignissimos exercitationem odit consequuntur dicta atque? Omnis,
+          corporis ab? Est rerum vero quae tenetur dolore explicabo maxime
+          laudantium numquam labore. Accusantium.
+        </p>
+      </section>
     </div>
   </body>
 </html>
