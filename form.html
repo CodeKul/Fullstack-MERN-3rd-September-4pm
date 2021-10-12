@@ -15,7 +15,7 @@
     <form>
       <label for="fname">Full Name</label>
       <input placeholder="full name" value="Sanket" id="fname" type="text" />
-      <br />
+      <br/>
 
       <label for="age">Age</label>
       <input placeholder="age" id="age" type="number" /> <br />
@@ -52,10 +52,19 @@
 
       <input type="datetime-local" name="" id="" />
 
-      <select name="" id="">
-        <option value="html">HTML</option>
-        <option value="css">CSS</option>
-        <option value="javascript">Javascript</option>
+      <select multiple name="" id="">
+        <optgroup label="FrontEnd">
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="javascript">Javascript</option>
+        </optgroup>
+
+        <optgroup label="BackEnd">
+          <option value="java">Java</option>
+          <option value="spring">Spring</option>
+          <option value="db">Database</option>
+        </optgroup>
+       
       </select>
 
       <input list="city" type="text">
@@ -65,7 +74,9 @@
           <option value="banglore">Banglore</option>
       </datalist>
 
+      <textarea name="" id="" cols="30" rows="10"></textarea>
 
+<input type="file" multiple accept="image/jpg" name="" id="">
 
       <input value="Sign Up" type="submit" />
       <button type="button">Login</button>
