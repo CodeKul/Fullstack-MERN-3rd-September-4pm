@@ -12,23 +12,24 @@
     employee registration 
     flight booking form airindia website
     train booking form icrtc -->
-    <form>
+    <form autocomplete="off">
       <label for="fname">Full Name</label>
-      <input placeholder="full name" value="Sanket" id="fname" type="text" />
+      <input autocapitalize="characters" autocomplete="off" required minlength="6" maxlength="10" placeholder="full name" id="fname" type="text" />
       <br/>
 
       <label for="age">Age</label>
-      <input placeholder="age" id="age" type="number" /> <br />
+      <input min="18" max="60" placeholder="age" id="age" type="number" /> <br />
 
       <label for="email">Email</label>
-      <input type="email" name="email" id="email" /> <br />
+      <input autofocus autocomplete="on" required type="email" name="email" id="email" /> <br />
 
+      <input type="text">
       <label for="">Password</label>
-      <input type="password" name="" id="">
-
+      <input minlength="6" type="password" name="" id="">
+<input disabled value="100" type="number">
       <label for="">Gender</label>
 
-      <input name="gender" type="radio" />
+      <input checked name="gender" type="radio" />
       <label for="">Male</label>
 
       <input name="gender" type="radio" />
@@ -40,7 +41,7 @@
       <label for="">Languages</label>
       <input type="checkbox" />
       <label for="">English</label>
-      <input type="checkbox" />
+      <input checked type="checkbox" />
       <label for="">Marathi</label>
       <input type="checkbox" />
       <label for="">Hindi</label>
@@ -76,7 +77,7 @@
 
       <textarea name="" id="" cols="30" rows="10"></textarea>
 
-<input type="file" multiple accept="image/jpg" name="" id="">
+<input type="file"  accept="image/jpg" name="" id="">
 
       <input value="Sign Up" type="submit" />
       <button type="button">Login</button>
