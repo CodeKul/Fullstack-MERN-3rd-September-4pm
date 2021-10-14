@@ -8,10 +8,25 @@
 // var keyword variables are global scope variable as well as function scope variable
 // let keyword variables are block scope variable as well as function scope variable
 //const keyword variable for a constant value variable
-var num1 = 20;
 
 
+// hoisting - whatever declaration part of variable as well as is there that is hoisted at the top
+
+// num1= 20;
+// console.log(num1)
+// var num1;
+
+
+let num1;
+num1=258
 console.log(num1)
+
+
+
+num1=35;
+
+
+
 
 if(true){
     console.log(num1)
