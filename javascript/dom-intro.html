@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>DOM introduction</h1>
+
+    <!-- <div class="container">
+      <div class="sports">
+        <h2>Cricket</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, facere
+          sit et dolorum ex dignissimos quod, voluptate vitae hic repellat
+          fugiat error perspiciatis, voluptatum velit. Dicta, suscipit
+          molestias! Vel, voluptate.
+        </p>
+      </div> 
+    </div> -->
+
+    <button onclick="displayData()">Create Dynamic data</button>
+
+
+
+
+    <script>
+
+
+function displayData() {
+let body = document.body;
+// let anchor = document.createElement("a")
+
+
+// (parent-element/node).appendChild(new element)
+// body.append(anchor)
+
+// let content = "Go to Github"
+// anchor.append(content)
+
+
+let div1 = document.createElement("div")
+let div2 = document.createElement("div")
+
+let h2 = document.createElement("h2")
+let p = document.createElement("p")
+
+
+body.append(div1)
+div1.appendChild(div2)
+div2.appendChild(h2)
+div2.appendChild(p)
+
+h2.append("Cricket")
+p.append(" Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, facere sit et dolorum ex dignissimos quod, voluptate vitae hic repellat fugiat error perspiciatis, voluptatum velit. Dicta, suscipit molestias! Vel, voluptate.")
+}
+    </script>
+  </body>
+</html>
