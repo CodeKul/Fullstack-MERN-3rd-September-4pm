@@ -7,7 +7,9 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>DOM introduction</h1>
+    <h1 id="title" style="color: tomato;">DOM introduction</h1>
+
+    <h1>ccbmk</h1>
 
     <!-- <div class="container">
       <div class="sports">
@@ -24,38 +26,44 @@
     <button onclick="displayData()">Create Dynamic data</button>
 
 
-
+    
 
     <script>
+      function displayData() {
+        let body = document.body;
+         let anchor = document.createElement("a")
 
+        // (parent-element/node).appendChild(new element)
+        body.append(anchor)
 
-function displayData() {
-let body = document.body;
-// let anchor = document.createElement("a")
+        let content = "Go to Github"
+        anchor.append(content)
 
+        let h1 = document.getElementById("title")
 
-// (parent-element/node).appendChild(new element)
-// body.append(anchor)
+     console.log(h1.getAttribute("style"))
 
-// let content = "Go to Github"
-// anchor.append(content)
+     h1.setAttribute("style", "color:blue")
 
+        anchor.setAttribute("href", "https://www.github.com")
+        anchor.setAttribute("class", "github")
 
-let div1 = document.createElement("div")
-let div2 = document.createElement("div")
+        let div1 = document.createElement("div");
+        let div2 = document.createElement("div");
 
-let h2 = document.createElement("h2")
-let p = document.createElement("p")
+        let h2 = document.createElement("h2");
+        let p = document.createElement("p");
 
+        body.append(div1);
+        div1.appendChild(div2);
+        div2.appendChild(h2);
+        div2.appendChild(p);
 
-body.append(div1)
-div1.appendChild(div2)
-div2.appendChild(h2)
-div2.appendChild(p)
-
-h2.append("Cricket")
-p.append(" Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, facere sit et dolorum ex dignissimos quod, voluptate vitae hic repellat fugiat error perspiciatis, voluptatum velit. Dicta, suscipit molestias! Vel, voluptate.")
-}
+        h2.append("Cricket");
+        p.append(
+          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, facere sit et dolorum ex dignissimos quod, voluptate vitae hic repellat fugiat error perspiciatis, voluptatum velit. Dicta, suscipit molestias! Vel, voluptate."
+        );
+      }
     </script>
   </body>
 </html>
