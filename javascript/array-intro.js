@@ -53,23 +53,59 @@ for (i = 0; i < 20; i++) {
 }
 
 let numarray = [10, 20, 30, 40, 60];
+console.log(numarray);
+numarray.splice(2, 2, "sanket", "Codekul");
+console.log(numarray);
 
 let state = (previous, current) => {
   console.log("State Value", previous * current);
   return previous + current;
 };
 
-
-console.log(numarray.toString())
+console.log(numarray.toString());
 console.log(numarray.reduce(state));
 
 fetch("https://jsonplaceholder.typicode.com/posts")
-.then((response) => {
-  //console.log(response.json())
-  
- JSON.stringify(response.json())
+  .then((response) => {
+    //console.log(response.json())
+    let data = response.json();
 
-})
+    console.log(data);
+
+    return data;
+  })
+
+  .then((result) => {
+    console.log(result);
+
+    //     result.map((post) => {
+    //       var output = `
+    // <div class="card">
+    // <div class="card-body">
+    // <p>${post.id}</p>
+    // <p>${post.body}</p>
+
+    // </div>
+
+    // </div>
+    // `;
+    //       document.write(output);
+    //     });
+
+    result.forEach((item) => {
+      var output = `
+  <div class="card">
+  <div class="card-body">
+  <p>${item.id}</p>
+  <p>${item.body}</p>
+  
+  </div>
+  
+  </div>
+  `;
+      document.write(output);
+    });
+  });
 
 //   axios.get("https://jsonplaceholder.typicode.com/posts")
 //   .then((response) => {
