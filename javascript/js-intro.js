@@ -17,6 +17,30 @@
 // var num1;
 
 
+let bd = new Date()
+console.log(bd)
+
+// (function xyz () {
+//     //stmnts..
+//     console.log("455")
+//     return 4;
+   
+// }())
+
+//xyz()
+
+
+//variable function
+var xyz = (function () {
+    console.log("fghjk")
+return 67;
+} ())
+
+console.log(xyz)
+
+
+
+
 let num1;
 num1=258
 console.log(num1)
@@ -26,10 +50,10 @@ var fname="codekul"
 num1=35;
 
 
-num5=55;
-console.log(num5)
+// num5=55;
+// console.log(num5)
 
-let num5;
+// let num5;
 
 
 
