@@ -65,7 +65,7 @@ let state = (previous, current) => {
 console.log(numarray.toString());
 console.log(numarray.reduce(state));
 
-fetch("https://jsonplaceholder.typicode.com/posts")
+fetch("https://jsonplaceholder.typicode.com/post")
   .then((response) => {
     //console.log(response.json())
     let data = response.json();

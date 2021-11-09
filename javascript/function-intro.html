@@ -8,15 +8,32 @@
 </head>
 <body>
     <script>
-        function addNumbers(a, b) {
-           
+        (function addNumbers() {
+           let a = 10;
+           let b = 20;
             console.log("addidition total", (a+b))
             return a+b;
             
-        }
+        })()
 
-        addNumbers(10,20)
+        //addNumbers(10,20)
+
+        const showResult = () => {
+            alert("Variable Function")
+        } 
+
        
+
+        setInterval( (sayHello = ()=> {
+            alert("Hello")
+        })(), 5000)
+        
+
+
+
+        // showResult()
+       
+        
 
         setTimeout(()=> {console.log("first statement")}, 6000)
 
