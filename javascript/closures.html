@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1>Cancel link Action</h1>
+
+    <p>
+        Clicking on the links will start a countdown timer.
+        If you fail to click again before it has reached 0,
+        you will be taken to the link URL..
+    </p>
+
+
+    <ul>
+        <li><a href="http://www.codekul.com">Codekul Website</a></li>
+        <li><a href="https://www.twitter.com">Twitter Website</a></li>
+    </ul>
+    
+
+    <script>
+        function makeLinkCancellable(link){
+            link.onclick = function (e) {
+                var timeout, timer = 5;
+
+                var updateTimer = function () {
+                    if(timer === 0) {
+                        link.onclick = null;
+                        link.innerHTML = "Here we go...";
+                        window.location.href = link.href;
+                    }
+
+                    else{
+                        link.innerHTML = "Click again to cancel. Remaining time: " + (timer--) +"s"
+                        timeout = setTimeout(function () {
+                            //updateTimer
+                            
+                        }
+                        , 1000);
+                    }
+                };
+
+                var linkText = link.innerHTML;
+
+                link.onclick = function() {
+                    clearTimeout(timeout);
+                    link.innerHTML = linkText;
+                    makeLinkCancellable(link);
+                    return false;
+                };
+
+                updateTimer();
+                return false;
+            };
+        
+        }
+
+
+        window.onload = function () {
+            var i, links = document.getElementsByTagName("a");
+            for(i=0; i<links.length; i ++) {
+                makeLinkCancellable(links[i]);
+            }
+        }
+    </script>
+</body>
+</html>
