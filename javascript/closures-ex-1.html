@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-
+  </head>
+  <body>
     <script>
-  let a; 
-a=20;
-console.log(a)
-      
-       
-       
-      
-      
-        b=40;
-        console.log(b)
-        var b; 
-       
-       
+    //   console.log(a);
+    //   let a;
+    //   a = 20;
+
+      //   b = 40;
+      //   console.log(b);
+      //   var b;
+
+      function OuterFunction() {
+        //   let a = 25;
+          console.log(a);
+        function InnerFunction() {
+          function displayData() {
+
+            let a = 35;
+        //   console.log(a);
+           
+            return "codekul";
+          
+          }
+
+          return displayData();
+        }
+
+        return InnerFunction();
+      }
+
+
+      console.log(OuterFunction())
     </script>
-</body>
+  </body>
 </html>
