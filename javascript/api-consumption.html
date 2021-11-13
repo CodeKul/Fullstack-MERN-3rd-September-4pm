@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+        // https://www.youtube.com/watch?v=jgWnccjXR4I
+
+        // https://www.youtube.com/watch?v=JRNToFh3hxU 
+        
+      fetch(
+        "https://api.edamam.com/api/recipes/v2?type=public&q=egg&app_id=3a6bab34&app_key=cf6ebfdcf5cbd02bde7f24df44ae3c41",
+        {
+          method: "GET",
+        }
+      )
+        .then((response) => {
+          console.log(response);
+          let data = response.json();
+          return data;
+        })
+
+        .then((result) => {
+          console.log(result);
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    </script>
+  </body>
+</html>
