@@ -1,0 +1,18 @@
+h1{
+    color: blue;
+}
+
+li{
+    display: inline;
+    margin-right: 6px;
+}
+
+nav{
+    background-color: black;
+    color: white;
+  
+}
+
+ul{
+    padding: 10px;
+}

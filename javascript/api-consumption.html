@@ -7,12 +7,37 @@
     <title>Document</title>
   </head>
   <body>
+    <div id="input-field"></div>
+    <button onclick="addFile()">Add New File</button>
+    <!-- <input type="file" name="" id=""> -->
+
+    <form action="" onsubmit="">
+      <input id="username" type="text" />
+      <input id="email" type="email" />
+      <input id="password" type="password" />
+      <button type="button">Create Account</button>
+    </form>
+
     <script>
-
-        // https://www.youtube.com/watch?v=jgWnccjXR4I
-
-        // https://www.youtube.com/watch?v=JRNToFh3hxU 
+      function validate() {
         
+      }
+
+      function addFile() {
+        let body = document.body;
+        let container = document.getElementById("input-field");
+
+        let input = document.createElement("input");
+        container.appendChild(input);
+        input.setAttribute("type", "file");
+      }
+
+      // https://www.youtube.com/watch?v=jgWnccjXR4I
+
+      // https://www.youtube.com/watch?v=JRNToFh3hxU
+
+      // [0-9]{3}[a-z]{2}
+
       fetch(
         "https://api.edamam.com/api/recipes/v2?type=public&q=egg&app_id=3a6bab34&app_key=cf6ebfdcf5cbd02bde7f24df44ae3c41",
         {
@@ -31,6 +56,13 @@
         .catch((err) => {
           console.error(err);
         });
+
+      let isLoggedIn = false;
+      if (isLoggedIn === true) {
+        document.write("Logout");
+      } else {
+        document.write("Login");
+      }
     </script>
   </body>
 </html>
